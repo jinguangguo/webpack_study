@@ -1,4 +1,4 @@
-webpackJsonp([1,5],{
+webpackJsonp([2,6],{
 
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
@@ -9,7 +9,7 @@ webpackJsonp([1,5],{
 	
 	setTimeout(function () {
 	
-	    __webpack_require__.e/* require */(2, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(226)]; (function (shared) {
+	    __webpack_require__.e/* require */(3, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(226)]; (function (shared) {
 	        shared("This is page A");
 	    }.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));});
 	}, 5000); /**

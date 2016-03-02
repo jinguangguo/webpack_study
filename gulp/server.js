@@ -35,7 +35,7 @@ gulp.task('server:start', function() {
 
     server.connection({
         host: '0.0.0.0',
-        port: 8001
+        port: 9000
     });
 
     server.register(Inert, function () {});

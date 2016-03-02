@@ -18,7 +18,8 @@ module.exports = {
     entry: {
         index: './src/js/index.js',
         pageA: './src/js/pageA.js',
-        pageB: './src/js/pageB.js'
+        pageB: './src/js/pageB.js',
+        es6: './src/js/es6.js'
     },
 
     output: {
@@ -80,7 +81,7 @@ module.exports = {
         noInfo: true,
 
         // display nothing to the console
-        quiet: true,
+        quiet: false,
 
         // switch into lazy mode
         // that means no watching, but recompilation on every request

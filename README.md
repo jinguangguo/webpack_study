@@ -48,7 +48,7 @@ gulp deploy:prod;       # 产品模式
 ```javascript
 
 // 加载某个样式文件
-import '../scss/index.scss';
+import './scss/index.scss';
 
 // 加载后端node模块的文件
 import React from 'react';
@@ -56,10 +56,10 @@ import { render } from 'react-dom';
 import { Router, Route, Link, IndexRoute, browserHistory, hashHistory } from 'react-router';
 
 // 可以直接加载html
-import '../widget/header/header';
+import './widget/header/header';
 
 // 加载进入某个png图片
-import chuiziPng from '../img/chuizi.png';
+import chuiziPng from './img/chuizi.png';
 
 ```
 
@@ -80,7 +80,7 @@ module.exports = {
 };
 
 // pageA.js
-require(['./async.test1.js'], function(asyncTest1) {
+require(['./js/async.test1.js'], function(asyncTest1) {
     asyncTest1.printA();
 });
 
@@ -90,7 +90,7 @@ module.exports = function() {
 };
 
 // pageB.js
-require(['./async.test2'], function(asyncTest2) {
+require(['./js/async.test2'], function(asyncTest2) {
     asyncTest2();
 });
 
@@ -115,14 +115,14 @@ pageA和pageB其中公共的资源会加入进commons.js中
 
 ```javascript
 // 加载公共的部分 - commons.js
-import common from './common';
+import common from './js/common';
 
 // 可以直接加载html - commons.js
-import '../widget/header/header';
+import './widget/header/header';
 
 common.parseUrl(window.location.href);
 
-require(['./async.test1.js'], function(asyncTest1) {
+require(['./js/async.test1.js'], function(asyncTest1) {
     asyncTest1.printA();
 });
 ```
@@ -132,9 +132,9 @@ require(['./async.test1.js'], function(asyncTest1) {
 import common from './common';
 
 // 可以直接加载html - commons.js
-import '../widget/header/header';
+import './widget/header/header';
 
-require(['./async.test2'], function(asyncTest2) {
+require(['./js/async.test2'], function(asyncTest2) {
     asyncTest2();
 });
 ```

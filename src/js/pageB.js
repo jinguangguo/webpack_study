@@ -4,10 +4,12 @@
  * @date 2016/2/19
  */
 
-//import {common} from './common';
+// 加载公共的部分
+import common from './common';
 
-require.ensure(["./shared"], function(require) {
-    var shared = require("./shared");
-    var commom = require('./common');
-    shared("This is page B");
+// 可以直接加载html
+import '../widget/header/header';
+
+require(['./async.test2'], function(asyncTest2) {
+    asyncTest2();
 });

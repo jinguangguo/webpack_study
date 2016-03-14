@@ -1,8 +1,16 @@
-webpackJsonp([4,6],[
+webpackJsonp([2],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
+	
+	var _common = __webpack_require__(1);
+	
+	var _common2 = _interopRequireDefault(_common);
+	
+	__webpack_require__(2);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	/**
 	 * @file
@@ -10,13 +18,14 @@ webpackJsonp([4,6],[
 	 * @date 2016/2/19
 	 */
 	
-	//import {common} from './common';
+	// 加载公共的部分
 	
-	__webpack_require__.e/* nsure */(5, function (require) {
-	  var shared = __webpack_require__(226);
-	  var commom = __webpack_require__(227);
-	  shared("This is page B");
-	});
+	
+	__webpack_require__.e/* require */(3, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(9)]; (function (asyncTest2) {
+	  asyncTest2();
+	}.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));});
+	
+	// 可以直接加载html
 
 /***/ }
 ]);

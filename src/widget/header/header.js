@@ -5,6 +5,6 @@
  */
 
 import './header.scss';
-let html = require('./header.tpl');
+import html from './header.tpl';
 
-console.log(html);
+console.log('The header html is : ' + html);

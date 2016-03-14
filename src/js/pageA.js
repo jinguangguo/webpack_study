@@ -4,16 +4,14 @@
  * @date 2016/2/19
  */
 
-//import {common} from './common';
+// 加载公共的部分
+import common from './common';
 
-//let shared = require('./shared');
-
+// 可以直接加载html
 import '../widget/header/header';
 
-setTimeout(function() {
+common.parseUrl(window.location.href);
 
-    require(["./shared"], function(shared) {
-        shared("This is page A");
-    });
-
-}, 5000);
+require(['./async.test1.js'], function(asyncTest1) {
+    asyncTest1.printA();
+});

@@ -16,16 +16,14 @@ module.exports = {
     devtool: "source-map",
 
     entry: {
-        index: './src/js/index.js',
         pageA: './src/js/pageA.js',
-        pageB: './src/js/pageB.js',
-        es6: './src/js/es6.js'
+        pageB: './src/js/pageB.js'
     },
 
     output: {
         path: path.resolve('build'),
         filename: "[name].bundle.js",
-        chunkFilename: "[chunkhash:8].chunk.js",
+        chunkFilename: "[chunkhash:8].async.js",
         publicPath: publicPath
     },
 

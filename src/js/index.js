@@ -4,14 +4,19 @@
  * @date 2016/2/18
  */
 
-// style
+// 加载某个样式文件
 import '../scss/index.scss';
 
-
-// framework
+// 加载后端node模块的文件
 import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, Link, IndexRoute, browserHistory, hashHistory } from 'react-router';
+
+// 可以直接加载html
+import '../widget/header/header';
+
+// 加载进入某个png图片
+import chuiziPng from '../img/chuizi.png';
 
 // module
 import {Test} from '../widget/Test/Test.js';
@@ -37,7 +42,7 @@ const About = React.createClass({
         return (
             <div className="module-about">
                 <h3>About</h3>
-                <img src={require('../img/chuizi.png')} alt="锤子" />
+                <img src={chuiziPng} alt="锤子" />
                 <div className="img-box"></div>
             </div>
         );

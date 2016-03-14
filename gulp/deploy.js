@@ -13,4 +13,4 @@ require('./deploy/js');
 
 gulp.task('deploy:debug', sequence('clean', ['html:debug', 'js:debug']));
 
-gulp.task('deploy:prod', sequence('clean'));
+gulp.task('deploy:prod', sequence('clean', 'html:prod', 'js:prod'));

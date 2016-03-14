@@ -24,7 +24,7 @@ module.exports = {
     output: {
         path: path.resolve(publicPath),
         filename: "[name].bundle.js",
-        chunkFilename: "./[chunkhash:8].async.js",
+        chunkFilename: "[id].async.js",
         publicPath: publicPath
     },
 

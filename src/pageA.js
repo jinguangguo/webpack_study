@@ -5,13 +5,13 @@
  */
 
 // 加载公共的部分
-import common from './common';
+import common from './js/common';
 
 // 可以直接加载html
-import '../widget/header/header';
+import './widget/header/header';
 
 common.parseUrl(window.location.href);
 
-require(['./async.test1.js'], function(asyncTest1) {
+require(['./js/async.test1.js'], function(asyncTest1) {
     asyncTest1.printA();
 });

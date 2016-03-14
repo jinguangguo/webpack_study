@@ -5,7 +5,7 @@
  */
 
 // 加载某个样式文件
-import '../scss/index.scss';
+import './scss/index.scss';
 
 // 加载后端node模块的文件
 import React from 'react';
@@ -13,13 +13,13 @@ import { render } from 'react-dom';
 import { Router, Route, Link, IndexRoute, browserHistory, hashHistory } from 'react-router';
 
 // 可以直接加载html
-import '../widget/header/header';
+import './widget/header/header';
 
 // 加载进入某个png图片
-import chuiziPng from '../img/chuizi.png';
+import chuiziPng from './img/chuizi.png';
 
 // module
-import {Test} from '../widget/Test/Test.js';
+import {Test} from './widget/Test/Test.js';
 
 const App = React.createClass({
     render() {

@@ -9,27 +9,28 @@ var path = require('path');
 
 var webpack = require('webpack');
 
-var publicPath = '/build/';
+var publicPath = '/static/';
 
 module.exports = {
 
     devtool: "source-map",
 
     entry: {
-        pageA: './src/js/pageA.js',
-        pageB: './src/js/pageB.js'
+        index: './src/index.js',
+        pageA: './src/pageA.js',
+        pageB: './src/pageB.js'
     },
 
     output: {
-        path: path.resolve('build'),
+        path: path.resolve(publicPath),
         filename: "[name].bundle.js",
-        chunkFilename: "[chunkhash:8].async.js",
+        chunkFilename: "./[chunkhash:8].async.js",
         publicPath: publicPath
     },
 
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
-            filename: "commons.js",
+            filename: "base.js",
             name: "commons"
         })
     ],

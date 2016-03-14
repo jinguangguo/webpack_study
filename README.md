@@ -149,4 +149,6 @@ require(['./async.test2'], function(asyncTest2) {
 
 ### 项目特点
 
-> - build目录是项目的缓存目录,项目的构建需要通过处理build目录来处理,即拷贝相关资源进入output目录
+> - build目录是项目的缓存(asset)目录,项目的构建需要通过处理build目录来处理,即拷贝相关资源进入output目录, 在开发的过程当中,可以没有build目录文件夹,因为开发的资源全部在缓存中,只要需要打包的时候,才需要进行webpack编译处理.
+> - 可以使用代理工具(如nproxy/charles)进行代理, 只需要代理对应的入口文件即可,即webpack.config.js中的entry属性中的文件.
+
